@@ -44,8 +44,13 @@ function App() {
     <>
       <h1>Dictionary App</h1>
       <form action="">
-        <input type="text" value={value} onChange={handlerfunction} />
-        <button onClick={handleSearch}>search</button>
+        <input
+          type="text"
+          value={value}
+          placeholder="Search for a word"
+          onChange={handlerfunction}
+        />
+        <button onClick={handleSearch}>Search</button>
       </form>
       <h3>Definition:</h3>
       {empty && <p>{def}</p>}
