@@ -21,11 +21,11 @@ function App() {
   };
   const handleSearch = (e) => {
     e.preventDefault();
+    isEmpty(true);
     if (value === "") {
       setDef("Word not found in the dictionary.");
       return;
     }
-    isEmpty(true);
     let formData = data.find(
       (e) => value.toUpperCase() === e.word.toUpperCase()
     );
