@@ -22,13 +22,10 @@ function App() {
   const handleSearch = (e) => {
     e.preventDefault();
     if (value === "") {
-      console.log(1);
-      isEmpty(false);
-      setDef("");
+      setDef("Word not found in the dictionary.");
       return;
     }
     isEmpty(true);
-    console.log(value.toUpperCase());
     let formData = data.find(
       (e) => value.toUpperCase() === e.word.toUpperCase()
     );
